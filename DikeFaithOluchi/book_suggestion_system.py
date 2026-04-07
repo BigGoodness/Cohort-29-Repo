@@ -7,7 +7,7 @@ def get_suggestion():
         book = random.choice(books)
 
         page = random.randint(1,300)
-
+ 
         return book, page
 
 def add_book(new_book = None):
