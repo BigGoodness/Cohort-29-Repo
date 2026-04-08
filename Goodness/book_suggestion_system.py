@@ -2,17 +2,13 @@ import random
 books = ["The Hobbit", "The Mystery", "Brave kind"]
 
 def suggest_books(books):
-    another = "yes"
-
-    while another == 'yes':
         random_book = random.choice(books)
         random_page = random.randint(1, 100)
-
         return random_book, random_page
 
 
 def add_book(books, book_name):
-    if book_name in books:
+    if book_name not in books:
         books.append(book_name)
         return True
 
